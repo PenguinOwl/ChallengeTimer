@@ -1,0 +1,27 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workbench ActiveDocument="ChallengeTimerModule.cs">
+    <Files>
+      <File FileName="ChallengeTimerModule.cs" Line="119" Column="53" />
+      <File FileName="ChallengeTimerSettings.cs" Line="8" Column="43" />
+      <File FileName="ChallengeTimerSession.cs" Line="3" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="ChallengeTimer" expanded="True">
+            <Node name="ChallengeTimer" expanded="True">
+              <Node name="References" expanded="True" />
+              <Node name="ChallengeTimerModule.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

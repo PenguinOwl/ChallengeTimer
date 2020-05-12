@@ -1,0 +1,6 @@
+- Name: ChallengeTimer
+  Version: 1.0.0
+  DLL: ChallengeTimer.dll
+  Dependencies:
+    - Name: Everest
+      Version: 1.0.0
