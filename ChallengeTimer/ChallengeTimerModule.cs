@@ -40,7 +40,7 @@ namespace Celeste.Mod.ChallengeTimer
             On.Celeste.SpeedrunTimerDisplay.Update += SpeedrunTimerDisplay_Update;
         }
 
-        void Glider_Added(On.Celeste.Glider.orig_Added orig, Glider self, Monocle.Scene scene)
+        public void Glider_Added(On.Celeste.Glider.orig_Added orig, Glider self, Monocle.Scene scene)
         {
             if (Settings.Enabled)
             {
@@ -78,7 +78,7 @@ namespace Celeste.Mod.ChallengeTimer
                     Level level = self.Scene as Level;
                     float x = self.CenterX;
                     float y = self.Bottom;
-                    if (Session.Jellies.Count >= 6 && self.OnGround() && 12906 < x && x < 12959 && -2974 < y && y < -2966)
+                    if (Session.Jellies.Count >= 7 && self.OnGround() && 12906 < x && x < 12959 && -2974 < y && y < -2966)
                     {
                         ChallengeComplete(level);
                     }
@@ -89,6 +89,9 @@ namespace Celeste.Mod.ChallengeTimer
         public void SpeedrunTimerDisplay_Update(On.Celeste.SpeedrunTimerDisplay.orig_Update orig, SpeedrunTimerDisplay self)
         {
             orig(self);
+            if (Session == null) {
+                return;
+            }
             if (Session.NoLerp)
                 self.DrawLerp = 1;
         }
